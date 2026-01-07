@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday 💜</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1F1F2E;
+            color: #F2F2F2;
+            text-align: center;
+        }
+
+        h1 {
+            color: #E6B7C8;
+            margin-top: 40px;
+        }
+
+        h3 {
+            color: #CDB4DB;
+        }
+
+        p {
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .message-box {
+            background-color: #2B2B3D;
+            padding: 25px;
+            margin: 40px auto;
+            width: 80%;
+            max-width: 650px;
+            border-radius: 15px;
+        }
+
+        .gallery,
+        .album {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img,
+        .album img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #CDB4DB;
+            color: #1F1F2E;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #E6B7C8;
+        }
+
+        /* ALBUM HIDDEN BY DEFAULT */
+        #albumSection {
+            display: none;
+            margin-top: 40px;
+        }
+
+        footer {
+            margin: 30px 0;
+            color: #A0A0B0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎉 Happy Birthday, Mami koe! 🎉</h1>
+    <h3>From: Mika 💜</h3>
+
+    <div class="message-box">
+        <p>
+            Hello, Mami koe! I’m so thankful to have you in my life.
+            Since Grade 8, you’ve always had a special place in my heart.
+            Even if we haven’t talked much these past few months, our bond is still here.
+            The love and care I have for you has never faded.
+            <br><br>
+            Always remember I’m here for you.
+            I’m just one message away, always 💜
+        </p>
+    </div>
+
+    <!-- PREVIEW PHOTOS -->
+    <div class="gallery">
+        <img src="j.jfif">
+        <img src="o.jfif">
+        <img src="w.jfif">
+    </div>
+
+    <button onclick="openAlbum()">Open Album 📸</button>
+
+    <!-- ALBUM SECTION -->
+    <div id="albumSection">
+        <h3>Our Memories 💜</h3>
+
+        <div class="album">
+            <img src="1.jfif">
+            <img src="2.jfif">
+            <img src="3.jpg">
+            <img src="4.jpg">
+            <img src="5.jpg">
+            <img src="6.jpg">
+            <img src="7.jpg">
+            <img src="8.jpg">
+            <img src="9.jpg">
+            <img src="10.jpg">
+            <img src="11.jpg">
+            <img src="12.jpg">
+        </div>
+    </div>
+
+    <script>
+        function openAlbum() {
+            document.getElementById("albumSection").style.display = "block";
+        }
+    </script>
+
+    <footer>
+        Made with love 💜
+    </footer>
+
+</body>
+</html>
